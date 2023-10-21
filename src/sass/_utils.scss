@@ -1,11 +1,11 @@
-@mixin body-copy {
-	font-family: "Barlow", "sans-serif";
-	font-size: 18px;
+@mixin normal-font {
+	font-family: "Inter", "sans-serif";
+	font-weight: 400;
 }
 
-@mixin fancy-font {
-	font-family: "Fraunces", "sans-serif";
-	font-weight: 900;
+@mixin bold-font {
+	font-family: "Inter", "sans-serif";
+	font-weight: 700;
 }
 
 @mixin flexbox($direction, $major-axis: center, $minor-axis: center) {
