@@ -1,17 +1,23 @@
-// Primary colors
-$soft-red: hsl(7, 99%, 70%);
-$yellow: hsl(51, 100%, 49%);
-$dark-desaturated-cyan: hsl(167, 40%, 24%);
-$dark-blue: hsl(198, 62%, 26%);
-$dark-moderate-cyan: hsl(168, 34%, 41%);
+.light-theme-colors {
+	#toggle {
+		background-color: hsl(230, 22%, 74%);
+	}
 
-// Neutral colors
-$dark-desaturated-blue: hsl(212, 27%, 19%);
-$extra-dark-grayish-blue: hsl(213, 9%, 39%);
-$dark-grayish-blue: hsl(232, 10%, 55%);
-$grayish-blue: hsl(210, 4%, 67%);
-$white: hsl(0, 0%, 100%);
+	--neutral-bg: hsl(0, 0%, 100%);
+	--neutral-top-bg-pattern: hsl(225, 100%, 98%);
+	--neutral-card-bg: hsl(227, 47%, 96%);
+	--neutral-text-1: hsl(228, 12%, 44%);
+	--neutral-text-2: hsl(230, 17%, 14%);
+}
 
-// Color that I somehow had to recover
-$footer-cyan: #90D4C5;
+.dark-theme-colors {
+	#toggle {
+		background-image: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+	}
 
+	--neutral-bg: hsl(0, 0%, 100%);
+	--neutral-top-bg-pattern: hsl(225, 100%, 98%);
+	--neutral-card-bg: hsl(227, 47%, 96%);
+	--neutral-text-1: hsl(228, 12%, 44%);
+	--neutral-text-2: hsl(230, 17%, 14%);
+}
