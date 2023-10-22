@@ -25,6 +25,19 @@ h1 {
 	@include flexbox(row);
 }
 
+hr {
+	width: 100%;
+	height: 1px;
+	border: none;
+
+	background-color: var(--neutral-text-1);
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	display: none;
+}
+
 #theme-name {
 	margin-right: 1rem;
 }
@@ -65,5 +78,18 @@ h1 {
 
 	.dark-theme-colors &::after {
 		right: $button-width - $inside-spacing - $knob-size;
+	}
+}
+
+@media (max-width: 650px) {
+	hr {
+		display: block;
+	}
+
+	#toggle-theme-container {
+		position: static;
+
+		justify-content: space-between;
+		width: 100%;
 	}
 }
