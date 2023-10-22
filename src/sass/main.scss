@@ -34,6 +34,14 @@ p {
 	color: var(--neutral-text-1);
 }
 
+h2 {
+	width: 100%;
+
+	color: var(--neutral-text-2);
+	text-align: left;
+	@include bold-font;
+}
+
 .diff-text::before {
 	display: inline-block;
 	transform: translateY(-20%);
