@@ -1,0 +1,41 @@
+@use 'globals' as *;
+
+
+.overview-card {
+	aspect-ratio: 2 / 1;
+	padding: 1.5rem;
+
+	background-color: var(--neutral-card-bg);
+	border-radius: $card-border-radius;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	justify-content: center;
+	align-items: center;
+
+	:nth-child(1) {
+		margin-bottom: auto;
+		margin-right: auto
+	}
+
+	:nth-child(2) {
+		margin-bottom: auto;
+		margin-left: auto;
+	}
+
+	:nth-child(3) {
+		margin-top: auto;
+		margin-right: auto;
+	}
+
+	:nth-child(4) {
+		margin-top: auto;
+		margin-left: auto;
+	}
+}
+
+.stats-number {
+	color: var(--neutral-text-2);
+	font-size: 2rem;
+}

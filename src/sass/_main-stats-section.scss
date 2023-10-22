@@ -1,13 +1,5 @@
 @use 'globals' as *;
 
-#main-stats {
-	width: 100%;
-	
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	gap: 3rem;
-}
-
 .main-card {
 	aspect-ratio: 1 / 1;
 	position: relative;
