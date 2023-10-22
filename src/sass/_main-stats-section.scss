@@ -1,0 +1,63 @@
+@use 'globals' as *;
+
+#main-stats {
+	width: 100%;
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 3rem;
+}
+
+.main-card {
+	aspect-ratio: 1 / 1;
+	position: relative;
+
+	background-color: var(--neutral-card-bg);
+	border-radius: $card-border-radius;
+
+	@include flexbox(column, space-evenly);
+
+	&::after {
+		content: '';
+		display: block;
+
+		border-radius: $card-border-radius $card-border-radius 0 0;
+
+		width: 100%;
+		height: 0.3rem;
+
+		position: absolute;
+		top: 0;
+	}
+}
+
+#fb-main::after {
+	background-color: $primary-fb;
+}
+
+#twt-main::after {
+	background-color: $primary-twt;
+}
+
+#insta-main::after {
+	background-image: $primary-insta;
+}
+
+#yt-main::after {
+	background-color: $primary-yt;
+}
+
+.social-media-container {
+	@include flexbox(row);
+}
+
+.people-count {
+	color: var(--neutral-text-2);
+	font-size: 3.5rem;
+}
+
+.people-name {
+	font-weight: 400;
+
+	letter-spacing: 0.2rem;
+}

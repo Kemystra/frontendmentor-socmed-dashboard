@@ -39,7 +39,7 @@ h1 {
 	$inside-spacing: 0.3rem;
 	$knob-size: $button-height - ($inside-spacing * 2);
 
-	&:after {
+	&::after {
 		display: block;
 		content: '';
 
@@ -55,11 +55,11 @@ h1 {
 		transition: right $theme-change-duration ease-out;
 	}
 
-	.light-theme-colors &:after {
+	.light-theme-colors &::after {
 		right: $inside-spacing;
 	}
 
-	.dark-theme-colors &:after {
+	.dark-theme-colors &::after {
 		right: $button-width - $inside-spacing - $knob-size;
 	}
 }

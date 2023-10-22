@@ -1,6 +1,7 @@
 @use 'globals' as *;
 
 @use 'header-section';
+@use 'main-stats-section';
 
 
 * {
@@ -13,21 +14,12 @@
 		background-color $theme-change-duration ease-out;
 }
 
-:root {
-	$primary-diff-up: hsl(163, 72%, 41%);
-	$primary-diff-down: hsl(356, 69%, 56%);
-
-	$primary-fb: hsl(208, 92%, 53%);
-	$primary-twt: hsl(203, 89%, 53%);
-	$primary-insta: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
-}
-
 html {
 	width: 100vw;
 }
 
 body {
-	width: 90%;
+	width: 82%;
 	margin: auto;
 
 	background-color: var(--neutral-bg);
@@ -37,5 +29,30 @@ body {
 
 p {
 	@include bold-font;
+	font-size: 0.8rem;
+
 	color: var(--neutral-text-1);
+}
+
+.diff-text::before {
+	display: inline-block;
+	transform: translateY(-20%);
+
+	margin-right: 0.4rem;
+}
+
+.up-trend {
+	color: $primary-diff-up;
+
+	&::before {
+		content: url("./images/icon-up.svg");
+	}
+}
+
+.down-trend {
+	color: $primary-diff-down;
+
+	&::before {
+		content: url("./images/icon-down.svg");
+	}
 }
