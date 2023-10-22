@@ -1,7 +1,7 @@
-@use 'colors';
-@use 'utils' as *;
+@use 'globals' as *;
 
-$theme-change-duration: 0.3s;
+@use 'header-section';
+
 
 * {
 	box-sizing: border-box;
@@ -38,68 +38,4 @@ body {
 p {
 	@include bold-font;
 	color: var(--neutral-text-1);
-}
-
-header {
-	width: 100%;
-	position: relative;
-
-	@include flexbox(column, center, flex-start);
-}
-
-h1 {
-	@include bold-font;
-	color: var(--neutral-text-2);
-}
-
-#toggle-theme-container {
-	position: absolute;
-	top: auto;
-	bottom: auto;
-	right: 0;
-
-	@include flexbox(row);
-}
-
-#theme-name {
-	margin-right: 1rem;
-}
-
-#toggle-theme {
-	$button-height: 1.8rem;
-	$button-width: 3.5rem;
-
-	width: $button-width;
-	height: $button-height;
-	position: relative;
-
-	border: none;
-	border-radius: 9999px;
-
-	$inside-spacing: 0.3rem;
-	$knob-size: $button-height - ($inside-spacing * 2);
-
-	&:after {
-		display: block;
-		content: '';
-
-		height: $knob-size;
-		width: $knob-size;
-
-		position: absolute;
-		top: $inside-spacing;
-
-		border-radius: inherit;
-		background-color: white;
-
-		transition: right $theme-change-duration ease-out;
-	}
-
-	.light-theme-colors &:after {
-		right: $inside-spacing;
-	}
-
-	.dark-theme-colors &:after {
-		right: $button-width - $inside-spacing - $knob-size;
-	}
 }
