@@ -30,6 +30,23 @@ body {
 	background-color: var(--neutral-bg);
 
 	@include flexbox(column);
+
+	&:after {
+		content: '';
+		display: block;
+
+		position: absolute;
+		top: 0;
+		z-index: -1;
+
+		height: 30vh;
+		width: 100vw;
+
+		border-bottom-right-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+
+		background-color: var(--neutral-top-bg-pattern);
+	}
 }
 
 p {

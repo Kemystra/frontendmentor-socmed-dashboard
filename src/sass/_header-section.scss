@@ -54,7 +54,7 @@ h1 {
 		top: $inside-spacing;
 
 		border-radius: inherit;
-		background-color: white;
+		background-color: var(--neutral-top-bg-pattern);
 
 		transition: right $theme-change-duration ease-out;
 	}
