@@ -5,10 +5,14 @@ header {
 	position: relative;
 
 	@include flexbox(column, center, flex-start);
+
+	margin-bottom: 3rem;
 }
 
 h1 {
 	@include bold-font;
+	font-size: 1.7rem;
+
 	color: var(--neutral-text-2);
 }
 

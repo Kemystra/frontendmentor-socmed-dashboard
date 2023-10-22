@@ -1,13 +1,18 @@
 @use 'globals' as *;
 
 .main-card {
-	aspect-ratio: 1 / 1;
+	aspect-ratio: 10 / 9;
+	padding-top: 2rem;
+	padding-bottom: 1.8rem;
+
+	margin-bottom: 3rem;
+
 	position: relative;
 
 	background-color: var(--neutral-card-bg);
 	border-radius: $card-border-radius;
 
-	@include flexbox(column, space-evenly);
+	@include flexbox(column, space-between);
 
 	&::after {
 		content: '';
@@ -41,6 +46,11 @@
 
 .social-media-container {
 	@include flexbox(row);
+	margin-bottom: auto;
+
+	p {
+		margin-left: 0.5rem;
+	}
 }
 
 .people-count {
@@ -49,7 +59,8 @@
 }
 
 .people-name {
-	font-weight: 400;
+	margin-bottom: auto;
 
+	font-weight: 400;
 	letter-spacing: 0.2rem;
 }

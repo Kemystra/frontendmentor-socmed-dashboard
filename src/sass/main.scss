@@ -21,7 +21,11 @@ html {
 
 body {
 	width: 82%;
+	min-height: 100vh;
 	margin: auto;
+	padding-top: 0.5rem;
+
+	position: relative;
 
 	background-color: var(--neutral-bg);
 
@@ -37,6 +41,7 @@ p {
 
 h2 {
 	width: 100%;
+	margin-bottom: 1.7rem;
 
 	color: var(--neutral-text-2);
 	text-align: left;
@@ -72,4 +77,9 @@ h2 {
 	&::before {
 		content: url("./images/icon-down.svg");
 	}
+}
+
+#attribution {
+	position: absolute;
+	bottom: 0;
 }
