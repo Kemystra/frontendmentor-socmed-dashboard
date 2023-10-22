@@ -1,10 +1,16 @@
 @use 'colors';
 @use 'utils' as *;
 
+$theme-change-duration: 0.3s;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	transition:
+		color $theme-change-duration ease-out,
+		background-color $theme-change-duration ease-out;
 }
 
 :root {
@@ -61,28 +67,32 @@ h1 {
 
 #toggle-theme {
 	$button-height: 1.8rem;
+	$button-width: 3.5rem;
 
-	width: 3.5rem;
+	width: $button-width;
 	height: $button-height;
 	position: relative;
 
 	border: none;
 	border-radius: 9999px;
 
-	$inside-spacing: 0.2rem;
+	$inside-spacing: 0.3rem;
+	$knob-size: $button-height - ($inside-spacing * 2);
 
 	&:after {
 		display: block;
 		content: '';
 
-		height: $button-height - ($inside-spacing * 2);
-		aspect-ratio: 1/1;
+		height: $knob-size;
+		width: $knob-size;
 
 		position: absolute;
 		top: $inside-spacing;
 
 		border-radius: inherit;
 		background-color: white;
+
+		transition: right $theme-change-duration ease-out;
 	}
 
 	.light-theme-colors &:after {
@@ -90,6 +100,6 @@ h1 {
 	}
 
 	.dark-theme-colors &:after {
-		left: $inside-spacing;
+		right: $button-width - $inside-spacing - $knob-size;
 	}
 }

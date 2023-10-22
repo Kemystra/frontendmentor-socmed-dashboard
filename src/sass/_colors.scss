@@ -12,12 +12,12 @@
 
 .dark-theme-colors {
 	#toggle-theme {
-		background-image: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+		background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 	}
 
-	--neutral-bg: hsl(0, 0%, 100%);
-	--neutral-top-bg-pattern: hsl(225, 100%, 98%);
-	--neutral-card-bg: hsl(227, 47%, 96%);
-	--neutral-text-1: hsl(228, 12%, 44%);
-	--neutral-text-2: hsl(230, 17%, 14%);
+	--neutral-bg: hsl(230, 17%, 14%);
+	--neutral-top-bg-pattern: hsl(232, 19%, 15%);
+	--neutral-card-bg: hsl(228, 28%, 20%);
+	--neutral-text-1: hsl(228, 34%, 66%);
+	--neutral-text-2: hsl(0, 0%, 100%);
 }
