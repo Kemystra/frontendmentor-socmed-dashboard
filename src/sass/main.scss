@@ -49,6 +49,10 @@ body {
 	}
 }
 
+main {
+	width: 100%;
+}
+
 p {
 	@include bold-font;
 	font-size: 0.9rem;
