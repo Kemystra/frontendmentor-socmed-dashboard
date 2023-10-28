@@ -78,6 +78,14 @@ h2 {
 	gap: 1.7rem;
 }
 
+.cards-theme {
+	background-color: var(--neutral-card-bg);
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 .diff-text::before {
 	display: inline-block;
 	transform: translateY(-20%);

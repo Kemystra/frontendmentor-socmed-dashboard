@@ -1,11 +1,14 @@
 @use 'globals' as *;
 
 
+#overview {
+	width: 100%;
+}
+
 .overview-card {
 	aspect-ratio: 2 / 1;
 	padding: 1.5rem;
 
-	background-color: var(--neutral-card-bg);
 	border-radius: $card-border-radius;
 
 	display: grid;

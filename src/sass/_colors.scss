@@ -7,6 +7,10 @@
 		}
 	}
 
+	.cards-theme:hover {
+		filter: brightness(0.9);
+	}
+
 	--neutral-bg: hsl(0, 0%, 100%);
 	--neutral-top-bg-pattern: hsl(225, 100%, 98%);
 	--neutral-card-bg: hsl(227, 47%, 96%);
@@ -17,6 +21,10 @@
 .dark-theme-colors {
 	#toggle-theme {
 		background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	}
+
+	.cards-theme:hover {
+		filter: brightness(1.5);
 	}
 
 	--neutral-bg: hsl(230, 17%, 14%);

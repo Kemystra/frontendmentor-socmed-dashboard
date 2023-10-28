@@ -72,6 +72,10 @@ hr {
 		transition: right $theme-change-duration ease-out;
 	}
 
+	&:hover {
+		cursor: pointer;
+	}
+
 	.light-theme-colors &::after {
 		right: $inside-spacing;
 	}
