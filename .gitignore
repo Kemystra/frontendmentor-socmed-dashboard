@@ -21,3 +21,6 @@ design/
 # CSS file
 style.css
 style.css.map
+
+# NPM stuff
+node_modules/
