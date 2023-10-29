@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Kemystra/frontendmentor-socmed-dashboard)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify Site](https://chic-licorice-255610.netlify.app/)
 
 ## My process
 
